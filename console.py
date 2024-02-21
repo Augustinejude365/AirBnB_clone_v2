@@ -129,14 +129,14 @@ class HBNBCommand(cmd.Cmd):
                 storage.save()
             else:
                 raise KeyError()
-            except SyntaxError:
-                print("** class name missing **")
-            except NameError:
-                print("** class doesn't exist **")
-            except IndexError:
-                print("** instance id missing **")
-            except KeyError:
-                print("** no instance found **")
+        except SyntaxError:
+            print("** class name missing **")
+        except NameError:
+            print("** class doesn't exist **")
+        except IndexError:
+            print("** instance id missing **")
+        except KeyError:
+            print("** no instance found **")
 
     def do_all(self, line):
         """
