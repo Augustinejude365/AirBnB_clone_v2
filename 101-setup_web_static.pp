@@ -1,6 +1,6 @@
-# Configures a web server for deployment of web_static.
+# A script that configures a web server for deployment of web_static.
 
-# Nginx configuration file
+# The Nginx configuration file
 $nginx_conf = "server {
 	listen 80 default_server;
 	listen [::]:80 default_server;
@@ -14,7 +14,7 @@ $nginx_conf = "server {
 	}
 
 	location /redirect_me {
-		return 301 http://cuberule.com/;
+		return 301 http://github.com/Augustinejude365;
 	}
 
 	error_page 404 /404.html;
